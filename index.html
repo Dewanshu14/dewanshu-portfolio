@@ -410,35 +410,34 @@ footer{position:relative;z-index:10;padding:1.5rem 3rem;border-top:1px solid var
   <div class="about-top-grid">
     <div>
       <h2 class="s-heading">Python is how<br/>I think in code.</h2>
-      <p class="about-text">I'm <strong>Dewanshu Dashrath Ukare</strong>, MCA Graduate passionate about software development with a strong foundation in Python, SQL, Django, HTML, CSS, JavaScript, DBMS, OOP, and SDLC.</p>
+      <p class="about-text">I'm <strong>Dewanshu Dashrath Ukare</strong>, MCA Graduate passionate about software development with a strong foundation in Python, SQL, Django, HTML, CSS, JavaScript, DBMS, OOPs, and SDLC.</p>
       <p class="about-text">I'm actively seeking an entry-level opportunity as a Software Engineer, Python Developer, Frontend Developer, or Software Tester to apply my skills, gain hands-on experience, and grow in the IT industry.</p>
     </div>
     <div>
-      <div class="photo-carousel">
-        <div class="carousel-track" id="carouselTrack">
+      <div class="carousel-track" id="carouselTrack">
           <div class="carousel-slide">
-            <div class="photo-placeholder">
-              <div class="photo-initials">DDU</div>
-              <div class="photo-label">Add your photo here</div>
-            </div>
+            <img src="photo1.jpg" alt="Dewanshu" style="width:100%;height:100%;object-fit:cover;border-radius:12px"/>
           </div>
           <div class="carousel-slide">
-            <div class="photo-placeholder" style="background:linear-gradient(135deg,#1a1230,#2d1f4a)">
-              <div class="photo-initials">DDU</div>
-              <div class="photo-label">Photo 2</div>
-            </div>
+            <img src="photo2.jpg" alt="Dewanshu" style="width:100%;height:100%;object-fit:cover;border-radius:12px"/>
           </div>
           <div class="carousel-slide">
-            <div class="photo-placeholder" style="background:linear-gradient(135deg,#0d2015,#1a3d28)">
-              <div class="photo-initials">DDU</div>
-              <div class="photo-label">Photo 3</div>
-            </div>
+            <img src="photo3.jpg" alt="Dewanshu" style="width:100%;height:100%;object-fit:cover;border-radius:12px"/>
           </div>
+          <div class="carousel-slide">
+            <img src="photo4.jpg" alt="Dewanshu" style="width:100%;height:100%;object-fit:cover;border-radius:12px"/>
+          </div>
+          <div class="carousel-slide">
+            <img src="photo5.jpg" alt="Dewanshu" style="width:100%;height:100%;object-fit:cover;border-radius:12px"/>
+          </div>
+        </div>
         </div>
         <div class="carousel-dots" id="carouselDots">
           <span class="carousel-dot active" onclick="goToSlide(0)"></span>
           <span class="carousel-dot" onclick="goToSlide(1)"></span>
           <span class="carousel-dot" onclick="goToSlide(2)"></span>
+          <span class="carousel-dot" onclick="goToSlide(3)"></span>
+          <span class="carousel-dot" onclick="goToSlide(4)"></span>
         </div>
         <button class="carousel-btn carousel-prev" onclick="changeSlide(-1)">&#8249;</button>
         <button class="carousel-btn carousel-next" onclick="changeSlide(1)">&#8250;</button>
@@ -501,7 +500,7 @@ footer{position:relative;z-index:10;padding:1.5rem 3rem;border-top:1px solid var
   </div>
 </section>
 
-<!-- CERTS -->
+<!-- CERTIFICATION -->
 <section id="certifications">
   <div class="s-label">Credentials</div>
   <h2 class="s-heading">Verified certifications.</h2>
@@ -564,7 +563,7 @@ footer{position:relative;z-index:10;padding:1.5rem 3rem;border-top:1px solid var
 
 <script>
 // ── PHOTO CAROUSEL ──
-var currentSlide=0;var totalSlides=3;var carouselInterval;
+var currentSlide=0;var totalSlides=5;var carouselInterval;
 function goToSlide(n){
   currentSlide=n;
   var track=document.getElementById('carouselTrack');
